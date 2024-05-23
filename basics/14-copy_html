@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -maxdepth 1 -name "*.html" -exec cp -n -t "$parent_dir" --update {} +
+cp -u ./*.html ..
