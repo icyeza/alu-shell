@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+#bash script that displays to infinity and beyond indefinitely, with a sleep 2 iteration between them and I am invincible when receiving a sigterm signal
+while :                                            
+do                                                 
+        echo "To infinity and beyond"              
+        sleep 2                                    
+        trap 'echo "I am invincible!!!"' SIGTERM   
+done
